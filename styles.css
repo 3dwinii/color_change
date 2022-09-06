@@ -1,0 +1,41 @@
+body {
+    background-color: pink;
+    color: darkgray;
+    margin: 7%;
+}
+
+.container {
+    border: solid 2px;
+    height: 80vh;
+    position: relative;
+}
+
+.ball-one {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+.ball-two {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+.ball-three {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: darkblue;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
