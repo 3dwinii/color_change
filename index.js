@@ -9,3 +9,4 @@ var col3 = "rgb(" + num3 + ", " + num1 + ", " + num2 + ")";
 document.querySelector(".ball-one").style.backgroundColor = col1;
 document.querySelector(".ball-two").style.backgroundColor = col2;
 document.querySelector(".ball-three").style.backgroundColor = col3;
+
