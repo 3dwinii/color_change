@@ -1,35 +1,20 @@
-.container {
-    position: absolute;
-    width: 100vh;
-    height: 100vh;
-}
-
-.big {
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    background-color: pink;
-    position: relative;
-    top: ;
-    left: ;
-}
-
-.med {
+.back {
     height: 200px;
     width: 200px;
-    border-radius: 100%;
-    background-color: cornflowerblue;
-    position: relative;
-    top: ;
-    left: ;
+    position: absolute;
+    background-color: pink;
+    z-index: -1;
 }
 
-.small {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    background-color: orange;
+.logo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+main {
+    height: 200px;
+    width: 200px;
     position: relative;
-    top: ;
-    left: ;
 }
