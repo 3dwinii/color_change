@@ -11,9 +11,9 @@ var num3 = Math.floor(Math.random() * 256);
 
 console.log("rgb(" + num1 + "," + num2 + "," + num3 + ")");
 }
-// $(".back").css("background-color", rgbNum);
+$(".back").css("background-color", rgbNum());
 
-rgbNum();
+console.log(rgbNum());
 
 //convert rgb into hex value
 //h1a/h1b means num1 converted into hex value, first number/letter (a) and second num/letter(b)
@@ -153,3 +153,27 @@ var num3 = Math.floor(Math.random() * 256);
 
 console.log(hexValue);
 
+
+
+//now try tap into logo.svg to change the value of fill (path.fill)
+
+
+// const fs = require("fs");
+
+// var file = fs.readFile("imgs/logo.svg", "utf-8", (err, data) => {
+//     console.log(data);
+// })
+
+
+const replace = require("replace-in-file");
+
+const options = {
+    files: imgs/localStorage.svg,
+    from: '#FFFFFF',
+    to: hexValue,
+}
+
+
+// var file = getFile("logo.svg");
+// var path = file.getElement("path");
+// console.log(path);
