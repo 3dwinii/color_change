@@ -1,27 +1,27 @@
 
 
 //random rgb color generator
-//generate 3 random numbers between/including 0-255, concatenate them into a string in rgb format: rgb(xx, xx, xx)
+//generate 3 random numbers between/including 0-255, concatenate them into a string in rgb format: rgb(xxx, xxx, xxx)
+
+
+function rgbNum() {
+var num1 = Math.floor(Math.random() * 256);
+var num2 = Math.floor(Math.random() * 256);
+var num3 = Math.floor(Math.random() * 256);
+
+console.log("rgb(" + num1 + "," + num2 + "," + num3 + ")");
+}
+// $(".back").css("background-color", rgbNum);
+
+rgbNum();
+
+//convert rgb into hex value
+//h1a/h1b means num1 converted into hex value, first number/letter (a) and second num/letter(b)
 
 
 var num1 = Math.floor(Math.random() * 256);
 var num2 = Math.floor(Math.random() * 256);
 var num3 = Math.floor(Math.random() * 256);
-
-var rgbNum = "rgb(" + num1 + "," + num2 + "," + num3 + ")";
-
-// $(".back").css("background-color", rgbNum);
-
-
-
-//convert rgb into hex value
-//test rgb(147, 125, 194)
-//h1a/h1b means num1 converted into hex value, first number/letter (a) and second num/letter(b)
-
-
-// var num1 = 147;
-// var num2 = 125;
-// var num3 = 194;
 
     var h1b = num1 % 16;
     var h1a = (num1 - h1b) / 16;
@@ -34,11 +34,6 @@ var rgbNum = "rgb(" + num1 + "," + num2 + "," + num3 + ")";
 
     // console.log("h1a is " + h1a + " h1b is " + h1b + " h2a is " + h2a + " h2b is " + h2b + " h3a is " + h3a + " h3b is " + h3b);
 
-    // if (h3a == 12) {
-    //     h3a = "C";
-    // } else {
-    //     h3a;
-    // }
 
     // if (h1a == 10 || h1b == 10 || h2a == 10 || h2b == 10 || h3a == 10 || h3b == 10) {
     //     return("A");
@@ -158,28 +153,3 @@ var rgbNum = "rgb(" + num1 + "," + num2 + "," + num3 + ")";
 
 console.log(hexValue);
 
-
-
-//     console.log("hex value is #" + h1a + h1b + h2a + h2b + h3a + h3b);
-// }
-
-// hex();
-
-// h1b = n1 % 16;
-// h1a = (n1 - h1b) / 16;
-
-// h2b = n2 % 16;
-// h2a = (n2 - h2b) / 16;
-
-// h3b = n3 % 16;
-// h3a = (n3 - h3b) / 16;
-
-// // if (h1a || h1b || h2a || h2b || h3a || h3b == 12) {
-// //     return "C";
-// // }
-
-// if (h3a == 10) {
-//     return "C";
-// }
-
-// console.log("hex value is #" + h1a + " " + h1b + " " + h2a + " " + h2b + " " + h3a + " " + h3b);
